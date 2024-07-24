@@ -11,7 +11,7 @@ import Feeding from '../adapters/entities/FeedingEntity';
 
 export const AppDataSource = new DataSource({
     type: "mysql",
-    host: "autenticacion.crawrvlmcbr6.us-east-1.rds.amazonaws.com",
+    host: "database-2.crawrvlmcbr6.us-east-1.rds.amazonaws.com",
     port: 3306,
     username: "admin",
     password: "12345678",
