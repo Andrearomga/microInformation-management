@@ -27,7 +27,9 @@ export class DreamController {
         });
     }
 
-    async list(req: Request, res: Response): Promise<void> {                
+    async list(req: Request, res: Response): Promise<void> {           
+        
+        console.log("Listando sueños")
         let IdBaby: number = isNaN(Number(req.params.IdBaby)) ? 0: Number(req.params.IdBaby);           
         
         const dreams: Dream[] = await this.dreamService.list(IdBaby);

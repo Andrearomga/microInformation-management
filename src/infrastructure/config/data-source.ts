@@ -11,10 +11,10 @@ import Feeding from '../adapters/entities/FeedingEntity';
 
 export const AppDataSource = new DataSource({
     type: "mysql",
-    host: "127.0.0.1",
+    host: "autenticacion.crawrvlmcbr6.us-east-1.rds.amazonaws.com",
     port: 3306,
-    username: "babylink",
-    password: "123",
+    username: "admin",
+    password: "12345678",
     database: "db-baby-link-information-management",
     entities: ["dist/domain/entities/*.js", VaccineGroup, VaccineBaby, Baby, Pediatrician, MedicalAppointment, Dream, Feeding],
     synchronize: true,
