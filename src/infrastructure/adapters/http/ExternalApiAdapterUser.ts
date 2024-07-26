@@ -6,7 +6,7 @@ export class ExternalApiAdapterUser implements IExternalApiUsers {
     private baseUrl: string;
 
     constructor() {
-        this.baseUrl = "http://192.168.0.24:7000/user/validate/token";
+        this.baseUrl = "http://autentication:7000/user/validate/token";
     }
 
     async validateToken(token: string): Promise<boolean> {
